@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landry Laundry | Houston's Premium Wash & Fold Service</title>
+    <meta name="description" content="Landry Laundry — Houston's top-rated pickup & delivery laundry service. Wash, dry & fold starting at $1.99/lb. Free pickup & delivery. Don't spend your Sunday doing laundry.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&#9670;</span>
+                LANDRY<span class="logo-accent">LAUNDRY</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="mobile-only"><a href="#contact" class="mobile-nav-cta">Schedule Pickup</a></li>
+            </ul>
+            <a href="#pricing" class="nav-cta">Schedule Pickup</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-slideshow" id="heroSlideshow">
+                <div class="hero-slide active">
+                    <img src="images/hero.png" alt="Freshly folded premium laundry" class="hero-bg-img">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/facility.png" alt="Modern commercial laundry facility" class="hero-bg-img">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/pickup.png" alt="Free pickup & doorstep delivery" class="hero-bg-img">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/wash-fold.png" alt="Professional wash, dry & fold service" class="hero-bg-img">
+                </div>
+                <div class="hero-slide">
+                    <img src="images/delivery.png" alt="Houston laundry delivery" class="hero-bg-img">
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-slideshow-nav" id="heroSlideNav">
+                <button class="slide-dot active" aria-label="Slide 1" data-slide="0"></button>
+                <button class="slide-dot" aria-label="Slide 2" data-slide="1"></button>
+                <button class="slide-dot" aria-label="Slide 3" data-slide="2"></button>
+                <button class="slide-dot" aria-label="Slide 4" data-slide="3"></button>
+                <button class="slide-dot" aria-label="Slide 5" data-slide="4"></button>
+            </div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">Houston's #1 Rated Laundry Service</div>
+            <h1 class="hero-title">
+                Don't Spend Your<br>
+                <span class="hero-title-accent">Sunday</span> Doing Laundry.
+            </h1>
+            <p class="hero-subtitle">
+                Premium wash, dry & fold with free pickup and delivery — right to your door. 
+                More time for what matters. Starting at just <strong>$1.99/lb</strong>.
+            </p>
+            <div class="hero-actions">
+                <a href="#pricing" class="btn btn-primary btn-lg">
+                    <span>Get Started — It's Free</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#how-it-works" class="btn btn-outline btn-lg">See How It Works</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="2500">0</span>+
+                    <span class="hero-stat-label">Happy Customers</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="15000">0</span>+
+                    <span class="hero-stat-label">Pounds Cleaned</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">4.9</span>
+                    <span class="hero-stat-label">★★★★★ Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===================== TRUST BAR ===================== -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Insured & Bonded</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                    <span>Eco-Friendly Detergents</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <span>Same-Day Turnaround</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Professional Staff</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    <span>Free Pickup & Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Premium Laundry <span class="text-gradient">Services</span></h2>
+                <p class="section-desc">From everyday essentials to delicate garments — we handle it all with care and precision.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card service-card-featured">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="13" r="5"/><circle cx="12" cy="13" r="2"/><circle cx="7" cy="6" r="1"/></svg>
+                    </div>
+                    <span class="service-badge">Most Popular</span>
+                    <h3>Wash, Dry & Fold</h3>
+                    <p>Your everyday laundry — washed, dried, neatly folded, and delivered fresh. We use premium detergents and fabric softeners.</p>
+                    <div class="service-price">From $1.99<span>/lb</span></div>
+                    <ul class="service-features">
+                        <li>✓ Free pickup & delivery</li>
+                        <li>✓ Premium detergents</li>
+                        <li>✓ 24-hour turnaround</li>
+                        <li>✓ Sorted & folded with care</li>
+                    </ul>
+                    <a href="#pricing" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M8 3v18M16 3v18M3 12h18"/></svg>
+                    </div>
+                    <h3>Dry Cleaning</h3>
+                    <p>Professional dry cleaning for suits, dresses, coats, and delicates. Expert care for your finest garments.</p>
+                    <div class="service-price">Per Garment</div>
+                    <ul class="service-features">
+                        <li>✓ Suits & blazers</li>
+                        <li>✓ Dresses & gowns</li>
+                        <li>✓ Stain treatment included</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-navy btn-block">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 22V4c0-1.1.9-2 2-2h8l6 6v14c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h8"/></svg>
+                    </div>
+                    <h3>Shirt Service</h3>
+                    <p>Dress shirts washed, pressed, and returned on hangers — crisp and ready for the boardroom.</p>
+                    <div class="service-price">Per Shirt</div>
+                    <ul class="service-features">
+                        <li>✓ Professionally pressed</li>
+                        <li>✓ On hangers</li>
+                        <li>✓ Light starch available</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-navy btn-block">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M9 22V12h6v10"/></svg>
+                    </div>
+                    <h3>Household Items</h3>
+                    <p>Bedding, comforters, curtains, and linens — freshened up and returned fluffy and clean.</p>
+                    <div class="service-price">Per Item</div>
+                    <ul class="service-features">
+                        <li>✓ Comforters & duvets</li>
+                        <li>✓ Bed sheets & pillowcases</li>
+                        <li>✓ Curtains & tablecloths</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-navy btn-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Simple & Easy</span>
+                <h2 class="section-title">How It <span class="text-gradient">Works</span></h2>
+                <p class="section-desc">Getting fresh, clean laundry has never been easier. Just 3 simple steps.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-visual">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3>Schedule Pickup</h3>
+                    <p>Book online or text us. Choose a time that works for your schedule — morning, afternoon, or evening.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12h35M30 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-visual">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="13" r="5"/><circle cx="12" cy="13" r="2"/><circle cx="7" cy="6" r="1"/></svg>
+                    </div>
+                    <h3>We Clean</h3>
+                    <p>Our team picks up your laundry and professionally washes, dries, and folds everything with premium products.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12h35M30 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-visual">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3>Delivered Fresh</h3>
+                    <p>Your clean, fresh laundry is delivered back to your door — neatly folded and ready to go. It's that simple.</p>
+                </div>
+            </div>
+            <div class="steps-cta">
+                <a href="#pricing" class="btn btn-primary btn-lg">
+                    <span>Schedule Your First Pickup</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROMO BANNER ===================== -->
+    <section class="promo-banner">
+        <div class="promo-bg">
+            <img src="images/hero.png" alt="Fresh laundry" class="promo-bg-img">
+            <div class="promo-overlay"></div>
+        </div>
+        <div class="container promo-content">
+            <h2 class="promo-title">Your First Order at <span class="text-gold">$1.99/lb</span></h2>
+            <p class="promo-text">Try Landry Laundry risk-free. If you're not satisfied, your next order is on us.</p>
+            <a href="#pricing" class="btn btn-primary btn-lg">Claim This Offer</a>
+        </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Transparent Pricing</span>
+                <h2 class="section-title">Simple, Honest <span class="text-gradient">Pricing</span></h2>
+                <p class="section-desc">No hidden fees. No surprises. Just clean laundry at fair prices.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Competitive</h3>
+                        <p class="pricing-desc">Great for regulars</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="pricing-dollar">$</span>
+                        <span class="pricing-value">1.99</span>
+                        <span class="pricing-unit">/lb</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Free pickup & delivery
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Wash, dry & fold included
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            48-hour turnaround
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Standard detergents
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-navy btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card pricing-card-featured">
+                    <div class="pricing-popular">Best Value</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p class="pricing-desc">Our most popular plan</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="pricing-dollar">$</span>
+                        <span class="pricing-value">2.49</span>
+                        <span class="pricing-unit">/lb</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Free pickup & delivery
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Same-day / next-day turnaround
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Real-time text updates
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Premium eco-friendly detergents
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Special garment care
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card pricing-card-promo">
+                    <div class="pricing-header">
+                        <h3>First Timer</h3>
+                        <p class="pricing-desc">Best marketing angle</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="pricing-dollar">$</span>
+                        <span class="pricing-value">1.99</span>
+                        <span class="pricing-unit">/lb</span>
+                    </div>
+                    <p class="pricing-then">Then $2.49/lb regular rate</p>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Everything in Premium
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Risk-free first order
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            Satisfaction guarantee
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            No commitment required
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-gold btn-block">Try It Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="images/facility.png" alt="Landry Laundry facility">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="images/pickup.png" alt="Laundry pickup service">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="about-exp-number">5+</span>
+                        <span class="about-exp-label">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title text-left">Houston's Most Trusted <span class="text-gradient">Laundry Service</span></h2>
+                    <p class="about-text">
+                        At Landry Laundry, we believe your time is too valuable to spend on laundry. Founded right here in Houston, we're dedicated to providing busy professionals, families, and anyone who values convenience with a premium wash-and-fold experience.
+                    </p>
+                    <p class="about-text">
+                        Our professional team treats every garment with care — using eco-friendly, premium detergents and fabric softeners. We pick up, clean, fold, and deliver — so you can focus on what truly matters.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <h4>100% Satisfaction Guarantee</h4>
+                                <p>Not happy? We'll re-clean it free.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div>
+                                <h4>Eco-Friendly Products</h4>
+                                <p>Safe for your clothes & the planet.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <h4>Fast Turnaround</h4>
+                                <p>Same-day & next-day options.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Houston <span class="text-gradient">Loves</span> About Us</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I used to waste my entire Sunday doing laundry. Now I just schedule a pickup and it's done. The quality is amazing — my clothes have never felt this fresh."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <div class="testimonial-name">Marcus J.</div>
+                            <div class="testimonial-location">Midtown, Houston</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"As a busy professional, this service is a game-changer. The text updates are great and my shirts come back perfectly pressed every single time."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <div class="testimonial-name">Sarah T.</div>
+                            <div class="testimonial-location">The Heights, Houston</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Best laundry service in Houston hands down. The pricing is fair, the turnaround is fast, and my clothes always smell incredible. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">D</div>
+                        <div>
+                            <div class="testimonial-name">David R.</div>
+                            <div class="testimonial-location">Galleria, Houston</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICE AREA ===================== -->
+    <section class="service-area">
+        <div class="container">
+            <div class="area-grid">
+                <div class="area-content">
+                    <span class="section-tag">Coverage</span>
+                    <h2 class="section-title text-left">Serving All of <span class="text-gradient">Houston</span></h2>
+                    <p class="area-text">We proudly serve the Greater Houston area with free pickup and delivery. From Downtown to the suburbs — we've got you covered.</p>
+                    <div class="area-locations">
+                        <div class="area-location">Downtown</div>
+                        <div class="area-location">Midtown</div>
+                        <div class="area-location">The Heights</div>
+                        <div class="area-location">Galleria</div>
+                        <div class="area-location">Montrose</div>
+                        <div class="area-location">River Oaks</div>
+                        <div class="area-location">Memorial</div>
+                        <div class="area-location">Energy Corridor</div>
+                        <div class="area-location">Katy</div>
+                        <div class="area-location">Sugar Land</div>
+                        <div class="area-location">Pearland</div>
+                        <div class="area-location">The Woodlands</div>
+                    </div>
+                    <p class="area-note">Don't see your area? <a href="#contact">Contact us</a> — we're expanding fast!</p>
+                </div>
+                <div class="area-map">
+                    <div class="area-map-placeholder">
+                        <img src="images/skyline.png" alt="Houston area" class="area-map-img">
+                        <div class="area-map-overlay">
+                            <div class="area-map-pin">📍</div>
+                            <span>Houston, TX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item" id="faq-1">
+                    <button class="faq-question" onclick="toggleFaq('faq-1')">
+                        <span>How does pickup & delivery work?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply schedule a pickup time online or by texting us. Leave your laundry bag at your door, and we'll pick it up, clean everything, and deliver it back — usually within 24 hours. It's completely contactless and hassle-free.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-2">
+                    <button class="faq-question" onclick="toggleFaq('faq-2')">
+                        <span>What detergents do you use?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We use premium, eco-friendly detergents that are tough on stains but gentle on fabrics. If you have allergies or preferences, just let us know — we're happy to use hypoallergenic or fragrance-free products.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-3">
+                    <button class="faq-question" onclick="toggleFaq('faq-3')">
+                        <span>Is there a minimum order?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We have a 10 lb minimum per order to ensure efficiency. Most customers easily exceed this with a standard load of laundry.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-4">
+                    <button class="faq-question" onclick="toggleFaq('faq-4')">
+                        <span>What if something is damaged or lost?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We're fully insured and bonded. In the rare event something is damaged or lost, we'll reimburse you for the full value. Your satisfaction is our top priority.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq-5">
+                    <button class="faq-question" onclick="toggleFaq('faq-5')">
+                        <span>How do I pay?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, debit cards, Apple Pay, Google Pay, and Venmo. Payment is processed after your laundry is weighed and cleaned — no upfront charges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT / CTA ===================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title text-left">Ready to Reclaim <span class="text-gradient">Your Weekend?</span></h2>
+                    <p class="contact-text">Schedule your first pickup today — or reach out with any questions. We'd love to hear from you.</p>
+                    <div class="contact-methods">
+                        <a href="tel:+18321234567" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-method-label">Call or Text</span>
+                                <span class="contact-method-value">(832) 123-4567</span>
+                            </div>
+                        </a>
+                        <a href="mailto:hello@landrylaundry.com" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-method-label">Email Us</span>
+                                <span class="contact-method-value">hello@landrylaundry.com</span>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-method-label">Hours</span>
+                                <span class="contact-method-value">Mon–Sat: 7AM – 8PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <h3>Schedule a Pickup</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(832) 000-0000" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Pickup Address</label>
+                            <input type="text" id="address" name="address" placeholder="Street address, Houston, TX">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="wash-fold">Wash, Dry & Fold</option>
+                                <option value="dry-cleaning">Dry Cleaning</option>
+                                <option value="shirts">Shirt Service</option>
+                                <option value="household">Household Items</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Instructions</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Any preferences or special requests..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                            <span>Schedule Pickup</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        <span class="logo-icon">&#9670;</span>
+                        LANDRY<span class="logo-accent">LAUNDRY</span>
+                    </a>
+                    <p class="footer-tagline">Houston's premium wash & fold laundry service. Pickup & delivery to your door.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Wash & Fold</a></li>
+                        <li><a href="#services">Dry Cleaning</a></li>
+                        <li><a href="#services">Shirt Service</a></li>
+                        <li><a href="#services">Household Items</a></li>
+                        <li><a href="#services">Commercial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="#">Downtown Houston</a></li>
+                        <li><a href="#">Midtown</a></li>
+                        <li><a href="#">The Heights</a></li>
+                        <li><a href="#">Galleria</a></li>
+                        <li><a href="#">River Oaks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Landry Laundry. All rights reserved. | Houston, TX</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
