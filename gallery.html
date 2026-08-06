@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Landry Laundry | Houston's Premium Wash & Fold Service</title>
+    <meta name="description" content="Explore our facility, wash & fold results, dry cleaning quality, and pickup & delivery service in Houston, TX. View Landry Laundry gallery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9670;</span>
+                LANDRY<span class="logo-accent">LAUNDRY</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="mobile-only"><a href="index.html#contact" class="mobile-nav-cta">Schedule Pickup</a></li>
+            </ul>
+            <a href="index.html#pricing" class="nav-cta">Schedule Pickup</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="images/hero.png" alt="Landry Laundry Facility and Services" class="page-hero-img">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">Gallery</span>
+            </div>
+            <h1 class="page-hero-title">Our Work & <span class="text-gradient">Facility Gallery</span></h1>
+            <p class="page-hero-desc">
+                Take a look inside Houston's premier wash & fold facility, our eco-friendly process, and the immaculate results we deliver to your doorstep.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY SECTION ===================== -->
+    <section class="gallery-section">
+        <div class="container">
+            
+            <!-- Category Filter Tabs -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="wash-fold">Wash & Fold</button>
+                <button class="filter-btn" data-filter="facility">Facility & Equipment</button>
+                <button class="filter-btn" data-filter="pickup">Pickup & Delivery</button>
+                <button class="filter-btn" data-filter="dry-cleaning">Dry Cleaning & Shirts</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <!-- Item 1 -->
+                <div class="gallery-item" data-category="wash-fold">
+                    <div class="gallery-card">
+                        <img src="images/hero.png" alt="Freshly Folded Luxury Linens" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Wash & Fold</span>
+                            <h3 class="gallery-title">Luxury Folded Towels & Linens</h3>
+                            <p class="gallery-caption">Sorted, sanitized, and neatly stacked with care.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/hero.png', 'Luxury Folded Towels & Linens', 'Wash & Fold — Crisp, fresh, and sanitized laundry returned neatly stacked.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item" data-category="facility">
+                    <div class="gallery-card">
+                        <img src="images/facility.png" alt="State of the art Commercial Laundry Facility" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Facility</span>
+                            <h3 class="gallery-title">High-Efficiency Commercial Washers</h3>
+                            <p class="gallery-caption">Advanced water temperature & detergent control.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/facility.png', 'High-Efficiency Commercial Washers', 'Facility — Industrial equipment for thorough cleaning.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item" data-category="pickup">
+                    <div class="gallery-card">
+                        <img src="images/pickup.png" alt="Doorstep Pickup and Delivery Service" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Pickup & Delivery</span>
+                            <h3 class="gallery-title">Contactless Doorstep Pickup</h3>
+                            <p class="gallery-caption">Free pickup & delivery across all Houston neighborhoods.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/pickup.png', 'Contactless Doorstep Pickup', 'Pickup & Delivery — Convenient contactless door pickup and drop-off.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item" data-category="wash-fold">
+                    <div class="gallery-card">
+                        <img src="images/wash-fold.png" alt="Pristine Wash and Fold Garments" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Wash & Fold</span>
+                            <h3 class="gallery-title">Pristine Garment Stacks</h3>
+                            <p class="gallery-caption">Folded according to fabric type for compact storage.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/wash-fold.png', 'Pristine Garment Stacks', 'Wash & Fold — Everyday clothes sorted by fabric and color.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item" data-category="dry-cleaning">
+                    <div class="gallery-card">
+                        <img src="images/shirt-press.png" alt="Crisp Pressed Executive Shirts" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Dry Cleaning & Shirts</span>
+                            <h3 class="gallery-title">Executive Shirt Pressing</h3>
+                            <p class="gallery-caption">Crisp collars, zero wrinkles, returned on hangers.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/shirt-press.png', 'Executive Shirt Pressing', 'Shirt Service — Steam pressed dress shirts ready for the office.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item" data-category="dry-cleaning">
+                    <div class="gallery-card">
+                        <img src="images/dry-cleaning.png" alt="Gentle Care Dry Cleaning for Suits" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Dry Cleaning & Shirts</span>
+                            <h3 class="gallery-title">Professional Suit & Dress Care</h3>
+                            <p class="gallery-caption">Solvent-free delicate cleaning for premium wear.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/dry-cleaning.png', 'Professional Suit & Dress Care', 'Dry Cleaning — Special stain treatment & gentle care for garments.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="gallery-item" data-category="pickup">
+                    <div class="gallery-card">
+                        <img src="images/delivery.png" alt="Houston Laundry Delivery Fleet" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Pickup & Delivery</span>
+                            <h3 class="gallery-title">Prompt Houston Delivery Vehicles</h3>
+                            <p class="gallery-caption">Same-day and next-day turnaround options.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/delivery.png', 'Prompt Houston Delivery Vehicles', 'Pickup & Delivery — Timely doorstep drop-off across Greater Houston.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="gallery-item" data-category="wash-fold">
+                    <div class="gallery-card">
+                        <img src="images/bedding.png" alt="Household Bedding and Duvet Cleaning" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Wash & Fold</span>
+                            <h3 class="gallery-title">Comforter & Bedding Care</h3>
+                            <p class="gallery-caption">Deep sanitization for duvets, blankets & sheets.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/bedding.png', 'Comforter & Bedding Care', 'Wash & Fold — Heavy household linens and comforters cleaned thoroughly.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="gallery-item" data-category="facility">
+                    <div class="gallery-card">
+                        <img src="images/team.png" alt="Dedicated Landry Laundry Staff" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Facility</span>
+                            <h3 class="gallery-title">Professional Cleaning Specialists</h3>
+                            <p class="gallery-caption">Trained specialists handling your garments with care.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/team.png', 'Professional Cleaning Specialists', 'Facility — Friendly, experienced team dedicated to quality.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="gallery-item" data-category="pickup">
+                    <div class="gallery-card">
+                        <img src="images/schedule-phone.png" alt="SMS Notifications and Easy Online Scheduling" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Pickup & Delivery</span>
+                            <h3 class="gallery-title">Real-Time SMS Order Tracking</h3>
+                            <p class="gallery-caption">Receive text updates when your laundry is picked up & delivered.</p>
+                            <button class="gallery-zoom-btn" onclick="openLightbox('images/schedule-phone.png', 'Real-Time SMS Order Tracking', 'Pickup & Delivery — Easy booking & driver tracking.')" aria-label="Zoom image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== LIGHTBOX MODAL ===================== -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close modal">&times;</button>
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle">Photo Title</h3>
+                <p id="lightboxCaption">Photo description</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== CTA BANNER ===================== -->
+    <section class="promo-banner">
+        <div class="promo-bg">
+            <img src="images/hero.png" alt="Fresh laundry" class="promo-bg-img">
+            <div class="promo-overlay"></div>
+        </div>
+        <div class="container promo-content">
+            <h2 class="promo-title">Ready to Experience <span class="text-gold">Landry Laundry?</span></h2>
+            <p class="promo-text">Get your first order washed, dried, folded & delivered for only <strong>$1.99/lb</strong>.</p>
+            <a href="index.html#pricing" class="btn btn-primary btn-lg">Schedule Your First Pickup</a>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-icon">&#9670;</span>
+                        LANDRY<span class="logo-accent">LAUNDRY</span>
+                    </a>
+                    <p class="footer-tagline">Houston's premium wash & fold laundry service. Pickup & delivery to your door.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#how-it-works">How It Works</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Wash & Fold</a></li>
+                        <li><a href="index.html#services">Dry Cleaning</a></li>
+                        <li><a href="index.html#services">Shirt Service</a></li>
+                        <li><a href="index.html#services">Household Items</a></li>
+                        <li><a href="index.html#services">Commercial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="#">Downtown Houston</a></li>
+                        <li><a href="#">Midtown</a></li>
+                        <li><a href="#">The Heights</a></li>
+                        <li><a href="#">Galleria</a></li>
+                        <li><a href="#">River Oaks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Landry Laundry. All rights reserved. | Houston, TX</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Lightbox Logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+
+        function openLightbox(src, title, caption) {
+            lightboxImg.src = src;
+            lightboxTitle.textContent = title;
+            lightboxCaption.textContent = caption;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
